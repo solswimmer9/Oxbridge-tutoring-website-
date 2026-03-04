@@ -7,6 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800&display=swap" rel="stylesheet" />
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -26,7 +28,7 @@
     html { scroll-behavior: smooth; }
 
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Cabinet Grotesk', 'Inter', sans-serif;
       background: var(--cream);
       color: var(--ink);
       -webkit-font-smoothing: antialiased;
@@ -82,7 +84,7 @@
       gap: 2px;
     }
     .mode-toggle button {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Cabinet Grotesk', 'Inter', sans-serif;
       font-size: 13px;
       font-weight: 500;
       padding: 7px 20px;
@@ -100,7 +102,7 @@
     }
 
     .nav-cta {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Cabinet Grotesk', 'Inter', sans-serif;
       font-size: 13.5px;
       font-weight: 500;
       padding: 9px 22px;
@@ -116,7 +118,7 @@
 
     /* ── EYEBROW LABEL ── */
     .eyebrow {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Cabinet Grotesk', 'Inter', sans-serif;
       font-size: 10px;
       font-weight: 500;
       letter-spacing: 0.4em;
@@ -159,7 +161,7 @@
     .hero-cta-group { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
 
     .btn-primary {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Cabinet Grotesk', 'Inter', sans-serif;
       font-size: 14px;
       font-weight: 500;
       padding: 13px 30px;
@@ -181,7 +183,7 @@
     }
 
     .btn-ghost {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Cabinet Grotesk', 'Inter', sans-serif;
       font-size: 14px;
       font-weight: 400;
       color: rgba(26,26,26,0.6);
@@ -220,12 +222,22 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      filter: sepia(45%) brightness(0.72) contrast(1.08) saturate(0.9);
+      filter: sepia(18%) brightness(0.9) contrast(1.04) saturate(1.12);
       transform: scale(1.03);
       transition: transform 10s ease;
       z-index: 0;
     }
     .painting-window:hover img { transform: scale(1.07); }
+
+    /* Panoramic painting variants */
+    .painting-panorama {
+      aspect-ratio: 21/8;
+      margin-bottom: 72px;
+    }
+    .painting-testimonial {
+      aspect-ratio: 16/6;
+      margin-bottom: 64px;
+    }
 
     /* Multi-layer vignette + tonal overlay */
     .painting-overlay {
@@ -233,10 +245,8 @@
       inset: 0;
       z-index: 1;
       background:
-        linear-gradient(to top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 55%),
-        linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 40%),
-        linear-gradient(135deg, rgba(45,74,34,0.22) 0%, transparent 55%),
-        linear-gradient(to right, rgba(0,0,0,0.18) 0%, transparent 40%);
+        linear-gradient(to top, rgba(0,0,0,0.28) 0%, rgba(0,0,0,0) 40%),
+        linear-gradient(to bottom, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0) 25%);
     }
 
     /* ── MAIN GLASS CARD (bottom) ── */
@@ -289,7 +299,7 @@
     .pill-dot-sage  { background: #a8c89e; }
 
     .pill-text {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Cabinet Grotesk', 'Inter', sans-serif;
       font-size: 11px;
       font-weight: 500;
       color: rgba(255,255,255,0.88);
@@ -323,7 +333,7 @@
       margin-bottom: 2px;
     }
     .glass-tag-label {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Cabinet Grotesk', 'Inter', sans-serif;
       font-size: 10px;
       font-weight: 500;
       letter-spacing: 0.08em;
@@ -338,7 +348,7 @@
     .tl-green { background: #28c840; }
 
     .glass-card-title {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Cabinet Grotesk', 'Inter', sans-serif;
       font-size: 11px;
       font-weight: 500;
       letter-spacing: 0.1em;
@@ -356,7 +366,7 @@
     .match-item:last-child { margin-bottom: 0; }
 
     .match-name {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Cabinet Grotesk', 'Inter', sans-serif;
       font-size: 13px;
       color: rgba(255,255,255,0.9);
       font-weight: 400;
@@ -376,7 +386,7 @@
     }
 
     .match-pct {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Cabinet Grotesk', 'Inter', sans-serif;
       font-size: 12px;
       font-weight: 600;
       color: #a8c89e;
@@ -392,7 +402,7 @@
     .school-dash-item:last-child { border-bottom: none; }
 
     .dash-label {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Cabinet Grotesk', 'Inter', sans-serif;
       font-size: 12px;
       color: rgba(255,255,255,0.65);
     }
@@ -403,7 +413,7 @@
       color: #a8c89e;
     }
     .dash-badge {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Cabinet Grotesk', 'Inter', sans-serif;
       font-size: 10px;
       font-weight: 600;
       padding: 3px 8px;
@@ -444,10 +454,10 @@
     }
     .score-row:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
 
-    .score-label { font-family: 'Inter', sans-serif; font-size: 12.5px; color: rgba(26,26,26,0.6); }
+    .score-label { font-family: 'Cabinet Grotesk', 'Inter', sans-serif; font-size: 12.5px; color: rgba(26,26,26,0.6); }
 
     .score-badge {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Cabinet Grotesk', 'Inter', sans-serif;
       font-size: 11px;
       font-weight: 600;
       padding: 3px 10px;
@@ -457,7 +467,7 @@
     .score-mid  { background: rgba(255,193,7,0.12); color: #b8860b; }
 
     .glass-card-cream-title {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Cabinet Grotesk', 'Inter', sans-serif;
       font-size: 11px;
       font-weight: 600;
       letter-spacing: 0.08em;
@@ -469,18 +479,21 @@
     /* ── CANDIDATE CARD (hero, light cream) ── */
     .candidate-card {
       position: absolute;
-      inset: 14px;
+      top: 18px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
       z-index: 4;
-      background: rgba(248, 244, 236, 0.86);
+      background: rgba(250, 247, 242, 0.88);
       backdrop-filter: blur(28px);
       -webkit-backdrop-filter: blur(28px);
-      border: 1px solid rgba(255,255,255,0.7);
+      border: 1px solid rgba(255,255,255,0.75);
       border-radius: 20px;
       padding: 22px 26px 24px;
       transition: transform 0.4s cubic-bezier(0.25,0.46,0.45,0.94), box-shadow 0.4s ease;
     }
     .painting-window:hover .candidate-card {
-      transform: translateY(-6px);
+      transform: translateX(-50%) translateY(-6px);
       box-shadow: 0 28px 72px rgba(0,0,0,0.22);
     }
     .candidate-card-title {
@@ -515,19 +528,19 @@
       color: var(--ink);
     }
     .candidate-subject {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Cabinet Grotesk', 'Inter', sans-serif;
       font-size: 13px;
       font-weight: 400;
       color: rgba(26,26,26,0.42);
     }
     .candidate-match {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Cabinet Grotesk', 'Inter', sans-serif;
       font-size: 13px;
       font-weight: 500;
       color: var(--sage);
     }
     .candidate-badge {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Cabinet Grotesk', 'Inter', sans-serif;
       font-size: 10px;
       font-weight: 600;
       letter-spacing: 0.07em;
@@ -560,7 +573,7 @@
     .painting-window:hover .glass-pill-cream { transform: translateY(-4px); }
 
     .pill-text-dark {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Cabinet Grotesk', 'Inter', sans-serif;
       font-size: 11px;
       font-weight: 600;
       color: var(--oxford-green);
@@ -597,7 +610,7 @@
     .stat-number sup { font-size: 28px; vertical-align: super; }
 
     .stat-label {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Cabinet Grotesk', 'Inter', sans-serif;
       font-size: 13px;
       color: rgba(26,26,26,0.5);
       line-height: 1.5;
@@ -643,29 +656,29 @@
     }
 
     .feature-card {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.09);
-      border-radius: 32px;
+      background: rgba(245, 241, 233, 0.96);
+      border: 1px solid rgba(255,255,255,0.6);
+      border-radius: 24px;
       padding: 40px;
       position: relative;
-      transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       overflow: hidden;
     }
     .feature-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 32px 64px rgba(0,0,0,0.4);
-      background: rgba(255,255,255,0.07);
+      transform: translateY(-6px);
+      box-shadow: 0 24px 56px rgba(0,0,0,0.3);
     }
 
     .card-number {
       position: absolute;
       top: 32px;
       right: 36px;
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 48px;
-      font-weight: 300;
-      color: rgba(255,255,255,0.06);
+      font-family: 'Cabinet Grotesk', 'Inter', sans-serif;
+      font-size: 32px;
+      font-weight: 500;
+      color: rgba(45,74,34,0.15);
       line-height: 1;
+      letter-spacing: -0.01em;
     }
 
     .card-accent {
@@ -677,17 +690,17 @@
     }
 
     .feature-card h3 {
-      font-size: 26px;
-      font-weight: 400;
-      color: var(--white);
-      margin-bottom: 14px;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 12px;
       line-height: 1.2;
     }
 
     .feature-card p {
       font-size: 14.5px;
       line-height: 1.7;
-      color: rgba(255,255,255,0.55);
+      color: rgba(26,26,26,0.6);
     }
 
     /* SVG card icon */
@@ -695,12 +708,12 @@
       width: 44px;
       height: 44px;
       border-radius: 14px;
-      background: rgba(255,255,255,0.07);
+      background: rgba(45,74,34,0.08);
       display: flex;
       align-items: center;
       justify-content: center;
       margin-bottom: 24px;
-      color: rgba(255,255,255,0.65);
+      color: var(--oxford-green);
     }
     .card-icon svg {
       display: block;
@@ -748,7 +761,7 @@
     .how-row.reversed > * { direction: ltr; }
 
     .how-text .step-label {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Cabinet Grotesk', 'Inter', sans-serif;
       font-size: 10px;
       font-weight: 600;
       letter-spacing: 0.4em;
@@ -782,7 +795,7 @@
     }
 
     .detail-list li {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Cabinet Grotesk', 'Inter', sans-serif;
       font-size: 14px;
       color: rgba(26,26,26,0.65);
       display: flex;
@@ -869,7 +882,7 @@
     .testimonial-meta { display: flex; justify-content: space-between; align-items: flex-end; }
 
     .testimonial-name {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Cabinet Grotesk', 'Inter', sans-serif;
       font-size: 13.5px;
       font-weight: 600;
       color: var(--ink);
@@ -877,13 +890,13 @@
     }
 
     .testimonial-detail {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Cabinet Grotesk', 'Inter', sans-serif;
       font-size: 12.5px;
       color: rgba(26,26,26,0.45);
     }
 
     .offer-badge {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Cabinet Grotesk', 'Inter', sans-serif;
       font-size: 9.5px;
       font-weight: 700;
       letter-spacing: 0.1em;
@@ -951,7 +964,7 @@
     .cta-buttons { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
 
     .btn-white {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Cabinet Grotesk', 'Inter', sans-serif;
       font-size: 14px;
       font-weight: 500;
       padding: 14px 34px;
@@ -970,7 +983,7 @@
     }
 
     .btn-outline {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Cabinet Grotesk', 'Inter', sans-serif;
       font-size: 14px;
       font-weight: 400;
       padding: 14px 34px;
@@ -1038,7 +1051,7 @@
     }
 
     .footer-col h4 {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Cabinet Grotesk', 'Inter', sans-serif;
       font-size: 11px;
       font-weight: 600;
       letter-spacing: 0.15em;
@@ -1055,7 +1068,7 @@
     }
 
     .footer-links a {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Cabinet Grotesk', 'Inter', sans-serif;
       font-size: 14px;
       color: rgba(26,26,26,0.6);
       text-decoration: none;
@@ -1292,6 +1305,20 @@
           <p>Every pillar of our programme is drawn from first-hand Oxford and Cambridge interview experience — not theory.</p>
         </div>
 
+        <!-- Methodology panoramic painting -->
+        <div class="painting-window painting-panorama reveal">
+          <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=1600&auto=format&fit=crop" alt="Oxford university campus" loading="lazy" />
+          <div class="painting-overlay"></div>
+          <div class="glass-pill">
+            <span class="pill-dot pill-dot-green"></span>
+            <span class="pill-text">Oxford &amp; Cambridge · 38 Colleges</span>
+          </div>
+          <div class="glass-tag">
+            <div class="glass-tag-num">94%</div>
+            <div class="glass-tag-label">Offer rate 2024</div>
+          </div>
+        </div>
+
         <div class="cards-grid">
           <div class="feature-card reveal">
             <span class="card-number">01</span>
@@ -1358,6 +1385,20 @@
             <h2>Strategic support.<br/><em>School-wide results.</em></h2>
           </div>
           <p>We embed seamlessly into your sixth form offer process — adding precision where it counts most.</p>
+        </div>
+
+        <!-- Partnership panoramic painting -->
+        <div class="painting-window painting-panorama reveal">
+          <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1600&auto=format&fit=crop" alt="Academic lecture theatre" loading="lazy" />
+          <div class="painting-overlay"></div>
+          <div class="glass-pill">
+            <span class="pill-dot pill-dot-amber"></span>
+            <span class="pill-text">School Partnership Programme</span>
+          </div>
+          <div class="glass-tag">
+            <div class="glass-tag-num">3.2×</div>
+            <div class="glass-tag-label">Avg. offer rate uplift</div>
+          </div>
         </div>
 
         <div class="cards-grid">
@@ -1537,6 +1578,57 @@
             </div>
           </div>
         </div>
+        <!-- Step 03 for Students -->
+        <div class="how-row reveal">
+          <!-- Oil Painting Visual — step 03 -->
+          <div class="painting-window">
+            <img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=900&auto=format&fit=crop" alt="Oxford library tutorial room" loading="lazy" />
+            <div class="painting-overlay"></div>
+            <div class="glass-pill">
+              <span class="pill-dot pill-dot-green"></span>
+              <span class="pill-text">Step 03 — Interview</span>
+            </div>
+            <div class="glass-tag">
+              <div class="glass-tag-num">3×</div>
+              <div class="glass-tag-label">Mock circuits</div>
+            </div>
+            <div class="glass-card">
+              <div class="traffic-lights">
+                <span class="tl tl-red"></span>
+                <span class="tl tl-yellow"></span>
+                <span class="tl tl-green"></span>
+              </div>
+              <div class="glass-card-title">Mock Interview — Session 3</div>
+              <div class="match-item">
+                <span class="match-name" style="font-size:12px;">Intellectual curiosity</span>
+                <div class="match-bar-wrap"><div class="match-bar" style="width:96%"></div></div>
+                <span class="match-pct">96%</span>
+              </div>
+              <div class="match-item">
+                <span class="match-name" style="font-size:12px;">Problem structuring</span>
+                <div class="match-bar-wrap"><div class="match-bar" style="width:88%"></div></div>
+                <span class="match-pct">88%</span>
+              </div>
+              <div class="match-item">
+                <span class="match-name" style="font-size:12px;">Composure under pressure</span>
+                <div class="match-bar-wrap"><div class="match-bar" style="width:93%"></div></div>
+                <span class="match-pct">93%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="how-text">
+            <span class="step-label">Step 03 — Interview Simulation</span>
+            <h3>Walk in prepared.<br/><em>Walk out with an offer.</em></h3>
+            <p>Three full mock interview circuits — structured to replicate your target college's exact format, tutor personality, and questioning depth. By the time you sit in the real room, nothing can surprise you.</p>
+            <ul class="detail-list">
+              <li>College-specific tutor style replication</li>
+              <li>Subject problem-sets calibrated to your level</li>
+              <li>Recorded feedback session after each circuit</li>
+              <li>Final readiness sign-off from your mentor</li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <!-- Schools: How We Work -->
@@ -1641,6 +1733,54 @@
             </div>
           </div>
         </div>
+
+        <!-- Phase 03 for Schools -->
+        <div class="how-row reveal">
+          <div class="how-text">
+            <span class="step-label">Phase 03 — Results &amp; Next Cycle</span>
+            <h3>Measure outcomes.<br/><em>Raise the bar.</em></h3>
+            <p>After results day, we deliver a full outcome report — offer rates by college, subject, and cohort background — alongside a forward plan for the next admissions cycle. Every year, your school gets better.</p>
+            <ul class="detail-list">
+              <li>Post-results outcome analysis across all candidates</li>
+              <li>College-level offer rate benchmarking</li>
+              <li>Debrief session with your Head of Sixth Form</li>
+              <li>Next-cycle planning and cohort pre-screening</li>
+            </ul>
+          </div>
+
+          <!-- Oil Painting Visual — phase 03 -->
+          <div class="painting-window">
+            <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=900&auto=format&fit=crop" alt="Grand university library" loading="lazy" />
+            <div class="painting-overlay"></div>
+            <div class="glass-pill-cream">
+              <span class="pill-dot pill-dot-green"></span>
+              <span class="pill-text-dark">Phase 03 — Outcomes</span>
+            </div>
+            <div class="glass-card-cream">
+              <div class="traffic-lights">
+                <span class="tl tl-red"></span>
+                <span class="tl tl-yellow"></span>
+                <span class="tl tl-green"></span>
+              </div>
+              <div class="glass-card-cream-title">Annual Outcome Report 2024</div>
+              <div class="school-dash-item">
+                <span class="dash-label">Candidates prepared</span>
+                <span class="dash-value">14</span>
+              </div>
+              <div class="school-dash-item">
+                <span class="dash-label">Offers received</span>
+                <span class="dash-value">11</span>
+              </div>
+              <div class="school-dash-item">
+                <span class="dash-label">Offer rate</span>
+                <div style="display:flex;align-items:center;gap:8px;">
+                  <span class="dash-value">79%</span>
+                  <span class="dash-badge">+3.2× uplift</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -1655,6 +1795,20 @@
           <p class="eyebrow">Success Stories</p>
           <h2>Scholars who went<br/><em>from uncertain to offered.</em></h2>
           <p>Real results from students who trusted the process.</p>
+        </div>
+
+        <!-- Testimonials painting accent -->
+        <div class="painting-window painting-testimonial reveal">
+          <img src="https://images.unsplash.com/photo-1519452635265-7b1fbfd1e4e0?w=1600&auto=format&fit=crop" alt="Historic Oxford college building" loading="lazy" />
+          <div class="painting-overlay"></div>
+          <div class="glass-pill">
+            <span class="pill-dot pill-dot-green"></span>
+            <span class="pill-text">Class of 2024 · 94% Offer Rate</span>
+          </div>
+          <div class="glass-tag">
+            <div class="glass-tag-num">127</div>
+            <div class="glass-tag-label">Offers since 2019</div>
+          </div>
         </div>
 
         <div class="testimonials-grid">
@@ -1701,6 +1855,20 @@
           <p class="eyebrow">Partner Schools</p>
           <h2>What sixth form leads<br/><em>say about the partnership.</em></h2>
           <p>Outcomes and endorsements from the educators we work with.</p>
+        </div>
+
+        <!-- Schools testimonials painting accent -->
+        <div class="painting-window painting-testimonial reveal">
+          <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1600&auto=format&fit=crop" alt="School sixth form building" loading="lazy" />
+          <div class="painting-overlay"></div>
+          <div class="glass-pill">
+            <span class="pill-dot pill-dot-amber"></span>
+            <span class="pill-text">42 Partner Schools · Nationwide</span>
+          </div>
+          <div class="glass-tag">
+            <div class="glass-tag-num">3.2×</div>
+            <div class="glass-tag-label">Average offer rate uplift</div>
+          </div>
         </div>
 
         <div class="testimonials-grid">
